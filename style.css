@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background-color: #f7efe5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navb{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+nav a:hover,nav a.act{
+    color: orange;
+}
+
+section{
+    height: 100vh;
+    background-color: #fff;
+}
+#home{
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.homeimg>img{
+    margin-top: 20vh;
+    margin-right: 2rem;
+    float:right;
+    width: 400px;
+    height: 70vh;
+}
+.hometext{
+   padding-top: 35vh;
+   padding-left: 5rem;
+   padding-right: 450px;
+   text-align: center;
+   font-style: italic;
+   font-size: 2rem;
+}
+.hometext>h3{
+    font-style: italic;
+    font-size: 2rem;
+}
+.hometext>p{
+    padding-top: 1.5rem;
+    font-style: italic;
+    font-size: 1rem;
+}
+.cvbutton{
+   text-decoration: none;
+   color: inherit;
+}
+#about{
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.abouttitle{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    padding-bottom: 1vh;
+}
+.aboutimg>img{
+    padding-top: 2vh;
+    height: 60vh;
+    width: 325px;
+    margin-left: 1rem;
+    float: left;
+    object-fit: contain;
+}
+.aboutcontent{
+    margin-left: 400px;
+}
+.abouttext{
+    padding-top: 2vh;
+    padding-right: 8vh;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+.abouttext>h5{
+    font-style: italic;
+    font-weight: 600;
+}
+.abouttext>h4{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.abouttext>p{
+    font-style: italic;
+    font-weight: 400;
+}
+.aboutskills{
+    padding-top: 1.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    margin-right: 5vh;
+}
+.skill{
+    font-style: italic;
+}
+#projects{
+    height: fit-content;
+}
+.projecttitle{
+    text-align: center;
+    padding-bottom: 1vh;
+}
+.carEle{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 5vh;
+}
+.card:hover{
+    transform: translateY(20px);
+    transition: 1s;
+}
+.card-body{
+    flex-direction: column;
+}
+.projecttitle{
+    text-decoration: underline;
+    font-style: italic;
+    margin-left: 5vh;
+} 
+#contact{
+    align-items: center;
+    height: fit-content;
+    margin: 10px;
+}
+.contacttext{
+    padding-top: 2vh;
+    text-align: center;
+    text-decoration: underline;
+}
+.contacttext>h2{
+    font-size: 20px;
+    font-style: italic;
+}
+.contacticons{
+   display: flex;
+   text-align: center;
+   font-size: 15px;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+.phone{
+    margin-top: 18px;
+}
+.links{
+    text-decoration: none;
+    margin: 0;
+    font-size: 10px;
+    color: black;
+}
+.links>h3{
+    font-size: 15px;
+}
+#hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+.hobb{
+    margin-top: 0;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.w-100 {
+    width: 100%!important;
+    height: 100vh;
+}
+footer{
+    text-align: center;
+    height: fit-content;
+    font-size: 8px;
+}
+@media screen and (max-width: 700px){
+    .logo{
+        font-size: 18px;
+    }
+    .navb{
+        font-size: 12px
+    }
+    section{
+        height: fit-content;
+    }
+    .home1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .homeimg>img{
+        clear: both;
+        width: 200px;
+        height: 50vh;
+        align-self: center;
+        justify-self: center;
+    }
+    .hometext{
+        padding: 0;
+        text-align: center;
+        font-style: italic;
+        font-size: 2rem;
+     }
+     .hometext>h3{
+        text-decoration: underline;
+     }
+     .about1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+     }
+     .aboutimg>img{
+        clear: left;
+        height: 45vh;
+        width: 200px;
+        border-radius: 5%;
+        margin-left: 1rem;
+    }
+    .aboutcontent{
+        margin-left: 0;
+    }
+    .abouttext{
+        padding-top: 5vh;
+        padding-right: 0;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .aboutskills{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+    }
+    .contacticons{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media screen and (min-height: 750px) and (max-height:900px){
+    .aboutimg>img{
+        height: 35vh;
+    }
+}
